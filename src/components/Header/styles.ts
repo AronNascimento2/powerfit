@@ -1,18 +1,26 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  width: 100%;
   .menu {
+    display: flex;
     color: #fff;
     display: flex;
+    align-items: center;
     padding: 2rem;
-    width: 800px;
-    justify-content: space-between;
-    font-family: "Audiowide", cursive;
-    font-family: "Roboto", sans-serif;
+    gap: 10rem;
+    font-family: "Teko", sans-serif;
+  }
+  h1 {
+    font-size: 50px;
+
+    margin-right: 10rem;
   }
   .power {
     color: #cd0003;
+  }
+  a {
+    text-decoration: none;
+    color: #fff;
   }
   nav,
   ul {
@@ -24,15 +32,28 @@ export const Container = styled.div`
     font-size: 25px;
     span {
       &:hover {
-        padding: 1rem;
-        border: 1px solid #fff;
+        padding: 0.5rem;
+        border: 2px solid #cd0003;
         cursor: pointer;
         border-radius: 10px;
       }
     }
   }
+  @media (max-width: 768px) {
+    .menu {
+      gap: 0;
+      justify-content: space-between;
+    }
+    h1 {
+      font-size: 20px;
+    }
+  }
 `;
 export const Wrapper = styled.div`
-  width: 100;
   background: rgba(0, 0, 0, 0.5);
+  @media (max-width: 768px) {
+    nav {
+      display: none;
+    }
+  }
 `;

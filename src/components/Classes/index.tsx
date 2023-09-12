@@ -3,28 +3,44 @@ import { Card, Container, Wrapper } from "./styles";
 export const Classes = () => {
   const classes = [
     {
-      img: "src/assets/muaythai.png",
+      img: "assets/muaythai.png",
+      title: "Muay Thai",
+      hours: "quinta 19:00",
     },
     {
-      img: "src/assets/jiu.png",
+      img: "assets/jiu.png",
+      title: "Jiu Jitsu",
+      hours: "quinta 19:00",
     },
     {
-      img: "src/assets/pilates.png",
+      img: "assets/pilates.png",
+      title: "Pilates",
+      hours: "quinta 19:00",
     },
     {
-      img: "src/assets/muscle.png",
+      img: "assets/muscle.png",
+      title: "Musculação",
+      hours: "quinta 19:00",
     },
     {
-      img: "src/assets/spinning.png",
+      img: "assets/spinning.png",
+      title: "Spinning",
+      hours: "quinta 19:00",
     },
   ];
+
   return (
     <Container>
-      <h2>TREINOS</h2>
+      <div className="wrapper-title">
+        {" "}
+        <h3>MODALIDADES</h3>
+      </div>
       <Wrapper>
-        {classes.map((c) => {
-          return <Card image={c.img}>{c.title}</Card>;
-        })}
+        <div className="content">
+          {classes.map((c) => (
+            <Card src={c.img} key={c.img}></Card>
+          ))}
+        </div>
       </Wrapper>
     </Container>
   );
