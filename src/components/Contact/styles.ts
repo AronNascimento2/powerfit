@@ -5,11 +5,13 @@ export const Container = styled.div`
   flex-direction: column;
   justify-content: center;
   background: #fff;
-  height: 100vh;
+  height: 100%;
+  font-family: "Teko", sans-serif;
+
   .wrapper-title {
     position: relative;
-    bottom: 200px;
-    margin-bottom: 4rem;
+    bottom: 50px;
+    justify-content: flex-start;
     border-radius: 12px 0 0 12px;
     align-self: flex-end;
     display: flex;
@@ -17,7 +19,7 @@ export const Container = styled.div`
     align-items: center;
     padding: 1rem;
     width: 400px;
-    height: 200px;
+    height: 150px;
     background-color: black;
     color: white;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
@@ -30,21 +32,22 @@ export const Container = styled.div`
   @media (max-width: 768px) {
     width: 100%;
     .wrapper-title {
-      bottom: 80px;
+      bottom: 35px;
       height: 100px;
-      max-width: 300px;
+      max-width: 200px;
     }
 
     h3 {
-      font-size: 40px;
+      font-size: 30px;
     }
   }
 `;
 export const Wrapper = styled.div`
   display: flex;
-  font-family: "Teko", sans-serif;
-  justify-content: center;
   gap: 1rem;
+  width: 100%;
+  padding: 4rem;
+  justify-content: center;
   span {
     font-size: 30px;
     align-items: center;

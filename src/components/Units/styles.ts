@@ -11,39 +11,37 @@ export const Container = styled.div`
   font-family: "Teko", sans-serif;
   .wrapper-title {
     position: relative;
-    bottom: 50px;
+    bottom: 60px;
     right: 19px;
-    margin-bottom: 4rem;
-    justify-content: flex-end;
+
     border-radius: 0 12px 12px 0;
+
+    justify-content: flex-end;
+    border-right: 8px solid #e30000;
     align-self: flex-start;
     display: flex;
-    border-right: 8px solid #e30000;
     align-items: center;
     padding: 1rem;
     width: 400px;
-    height: 200px;
+    height: 150px;
     background-color: #fff;
     color: black;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
       rgba(0, 0, 0, 0.22) 0px 15px 12px;
     font-size: 51px;
   }
-  h3 {
-    font-family: "Teko", sans-serif;
-  }
+
   @media (max-width: 768px) {
     width: 100%;
     height: 100%;
     .wrapper-title {
-      right: 19px;
-      bottom: 40px;
+      bottom: 50px;
       height: 100px;
-      max-width: 300px;
+      max-width: 200px;
     }
 
     h3 {
-      font-size: 40px;
+      font-size: 30px;
     }
   }
 `;
@@ -78,12 +76,12 @@ export const Card = styled.div`
   }
 
   @media (max-width: 768px) {
-    height: 200px;
-    width: 150px;
-    .title {
-      width: 100%;
-      margin-bottom: 0;
-    }
+    height: 400px;
+    width: 300px;
+  }
+  .title {
+    width: 100%;
+    margin-bottom: 0;
   }
 `;
 type props = {

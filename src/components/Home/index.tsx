@@ -31,7 +31,7 @@ export const Home = () => {
           <h2>
             Seja um aluno <span className="power">POWER</span>FIT
           </h2>
-          <p>conheça nossas unidades.</p>
+          <p>Conheça nossas unidades.</p>
           <button>Matricule-se</button>
         </div>
 

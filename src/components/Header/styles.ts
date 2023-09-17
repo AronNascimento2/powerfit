@@ -40,12 +40,17 @@ export const Container = styled.div`
     }
   }
   @media (max-width: 768px) {
+    nav,
+    ul {
+      align-items: flex-start;
+      padding-left: 2rem;
+    }
     .menu {
       gap: 0;
       justify-content: space-between;
     }
     h1 {
-      font-size: 20px;
+      font-size: 30px;
     }
   }
 `;

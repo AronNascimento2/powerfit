@@ -32,23 +32,21 @@ export const Plans = () => {
         <h3>MATRICULE-SE</h3>
       </div>
       <Wrapper>
-        <div className="content">
-          {plans.map((plan) => (
-            <Card key={plan.id}>
-              <StyledImage src={plan.img}></StyledImage>
-              <span className="title">{plan.title}</span>
-              <p>
-                R$ <span className="money">{plan.value}</span> mensais
-              </p>
-              <ul>
-                {plan.workouts.map((workout, index) => (
-                  <li key={index}>{workout}</li>
-                ))}
-              </ul>
-              <button>Contratar</button>
-            </Card>
-          ))}
-        </div>
+        {plans.map((plan) => (
+          <Card key={plan.id}>
+            <StyledImage src={plan.img}></StyledImage>
+            <span className="title">{plan.title}</span>
+            <p>
+              R$ <span className="money">{plan.value}</span> mensais
+            </p>
+            <ul>
+              {plan.workouts.map((workout, index) => (
+                <li key={index}>{workout}</li>
+              ))}
+            </ul>
+            <button>Contratar</button>
+          </Card>
+        ))}
       </Wrapper>
     </Container>
   );

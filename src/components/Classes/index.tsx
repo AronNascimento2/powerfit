@@ -36,11 +36,9 @@ export const Classes = () => {
         <h3>MODALIDADES</h3>
       </div>
       <Wrapper>
-        <div className="content">
-          {classes.map((c) => (
-            <Card src={c.img} key={c.img}></Card>
-          ))}
-        </div>
+        {classes.map((c) => (
+          <Card src={c.img} key={c.img}></Card>
+        ))}
       </Wrapper>
     </Container>
   );

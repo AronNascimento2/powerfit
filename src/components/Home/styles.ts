@@ -10,7 +10,7 @@ export const Container = styled.div`
 export const Background = styled.div`
   height: 100vh;
   width: 100%;
-  background-image: url("assets/gym.png");
+  background-image: url("assets/gym1.png");
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
@@ -32,7 +32,7 @@ export const Background = styled.div`
   }
   .join {
     height: 300px;
-    width: 600px;
+    width: 800px;
     color: #fff;
     margin: 3rem;
     position: relative;
@@ -40,23 +40,21 @@ export const Background = styled.div`
     left: 100px;
     font-family: "Teko", sans-serif;
     h2 {
-      font-size: 40px;
-      padding-bottom: 2rem;
+      font-size: 100px;
     }
     p {
-      font-size: 30px;
+      font-size: 50px;
       padding-bottom: 2rem;
     }
     button {
       width: 300px;
-      height: 50px;
+      height: 60px;
       border-radius: 8px;
       background: #cd0003;
       border: none;
       color: #fff;
       font-family: "Teko", sans-serif;
-      font-weight: 600;
-      font-size: 20px;
+      font-size: 40px;
       box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
         rgba(0, 0, 0, 0.22) 0px 15px 12px;
       &:hover {
@@ -77,17 +75,17 @@ export const Background = styled.div`
       width: auto;
 
       h2 {
-        font-size: 30px;
+        font-size: 35px;
         padding-bottom: 0;
       }
       p {
-        font-size: 20px;
+        font-size: 25px;
         padding-bottom: 1rem;
       }
       button {
         width: 200px;
-
-        font-size: 20px;
+        height: 50px;
+        font-size: 25px;
       }
     }
     .power {
@@ -95,7 +93,7 @@ export const Background = styled.div`
     }
     width: auto;
     background-size: cover; /* Altere o tamanho do plano de fundo para conter */
-    background-position: 35%;
+    background-position: 50% 90px;
     .anchor {
       width: 30px;
       height: 30px;

@@ -5,60 +5,62 @@ export const Container = styled.div`
   flex-direction: column;
   justify-content: center;
   width: auto;
-  height: 100vh;
+  height: 100%;
+  background-color: #fff;
+  font-family: "Teko", sans-serif;
 
   background-image: url("assets/new.png");
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
-  font-family: "Teko", sans-serif;
   .wrapper-title {
     position: relative;
     bottom: 50px;
-    margin-bottom: 4rem;
-    justify-content: flex-end;
+    right: 19px;
+
     border-radius: 0 12px 12px 0;
+
+    justify-content: flex-end;
+    border-right: 8px solid #e30000;
     align-self: flex-start;
     display: flex;
-    border-right: 8px solid #e30000;
     align-items: center;
     padding: 1rem;
     width: 400px;
-    height: 200px;
+    height: 150px;
     background-color: #fff;
     color: black;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
       rgba(0, 0, 0, 0.22) 0px 15px 12px;
     font-size: 51px;
   }
-  h3 {
-    font-family: "Teko", sans-serif;
-  }
+
   @media (max-width: 768px) {
     width: 100%;
+    height: 100%;
     background-position: 70%;
 
     .wrapper-title {
-      bottom: 80px;
-
+      bottom: 35px;
       height: 100px;
-      max-width: 300px;
+      max-width: 200px;
     }
 
     h3 {
-      font-size: 40px;
+      font-size: 30px;
     }
   }
 `;
 export const Card = styled.div`
-  width: auto;
+  width: 350px;
+  height: 500px;
   border-radius: 10px;
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: center;
   background-color: #fff;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  box-shadow: 2px 2px 10px 0 rgba(0, 0, 0, 0.2);
 
   .title {
     width: 200px;
@@ -106,8 +108,9 @@ export const Card = styled.div`
     }
   }
   @media (max-width: 768px) {
-    height: 500px;
+    height: 400px;
     width: 300px;
+
     .title {
       width: 100%;
       margin-bottom: 0;
@@ -147,20 +150,20 @@ export const StyledImage = styled.div<props>`
     margin-bottom: 1rem;
     @media (max-width: 768px) {
       margin-bottom: 0;
-
-      background-position: 0 -20px;
     }
   `}
 `;
 export const Wrapper = styled.div`
   display: flex;
   gap: 1rem;
+  align-items: center;
   width: 100%;
-  height: auto;
-  overflow: auto;
+
+  justify-content: center;
   padding: 1rem;
   padding-bottom: 4rem;
   justify-content: center;
+  flex-wrap: wrap;
   .content {
     gap: 0.5rem;
     width: 900px;
@@ -169,6 +172,6 @@ export const Wrapper = styled.div`
     align-items: center;
   }
   @media (max-width: 768px) {
-    justify-content: initial;
+    justify-content: center;
   }
 `;
